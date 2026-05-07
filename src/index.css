@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-heritage-dark: #000000;
+  --color-heritage-card: #ffffff;
+  --color-heritage-gold: #c5a059;
+  --color-heritage-white: #ffffff;
+  --color-heritage-ink: #1a1a1a;
+  --color-heritage-muted: #666666;
+}
+
+body {
+  background-color: var(--color-heritage-dark);
+  color: var(--color-heritage-white);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.tree-node-connector {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  width: 1px;
+  height: 24px;
+  background: var(--color-heritage-gold);
+}
+
+.tree-siblings-connector {
+  position: absolute;
+  top: -24px;
+  height: 1px;
+  background: var(--color-heritage-gold);
+}
+
+/* Interaktiv effektlar */
+.node-glow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.node-glow:hover {
+  box-shadow: 0 10px 30px rgba(197, 160, 89, 0.3);
+}
